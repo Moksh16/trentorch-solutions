@@ -17,10 +17,7 @@ def keep_positive(values):
     Example:
         list(keep_positive([-2, 0, 3, 5])) -> [3, 5]
     """
-    for i in values:
-        if i>0:
-            yield i
-    pass
+    return filter(lambda x: x>0, values)
 
 
 def transform_and_filter(values, transform, predicate):
