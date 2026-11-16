@@ -6,9 +6,7 @@ def squared(values):
     Example:
         list(squared([1, 2, 3])) -> [1, 4, 9]
     """
-    for i in values:
-        b = i*i
-        yield b
+    return map(lambda x:x*x, values)
 
 
 def keep_positive(values):
